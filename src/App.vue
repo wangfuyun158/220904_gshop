@@ -7,11 +7,31 @@
 
 <script>
   import  FooterGuide from './components/FooterGuide/FooterGuide.vue'
+  import {mapActions} from 'vuex'
+  import {reqFoodCategorys} from './api'
   export default {
-  components:{
-    FooterGuide
+    /*async mounted () {
+      // console.log("hahaha")
+      // const result = await reqFoodCategorys()
+      // console.log("hahaha1")
+      // console.log(result)
+    },*/
+    /*mounted(){
+      this.$store.dispatch('getAddress');
+    },*/
+    mounted(){
+      this.getAddress()
+    },
+    methods:{
+      ...mapActions(['getAddress'])
+    },
+    components:{
+      FooterGuide
+    },
+
+
+
   }
-}
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
