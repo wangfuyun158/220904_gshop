@@ -13,6 +13,8 @@
   "dependencies": {
     "axios": "^0.27.2",
     "mint-ui": "^2.2.13",
+    "mock.js": "^0.2.0",
+    "mockjs": "^1.1.0",
     "swiper": "^8.3.2",
     "vue": "^2.5.2",
     "vue-i18n": "^8.26.7",
